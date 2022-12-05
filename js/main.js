@@ -35,3 +35,19 @@ spans.forEach((index) =>
     index.classList.remove("animated", "rubberBand");
   })
 );
+
+function sendEmail () {
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "anthonysamson063@gmail.com",
+    Password : "anthonycoder",
+    To : 'furthermaths078@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Succesfully")
+);
+}

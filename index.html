@@ -194,11 +194,11 @@
     <section class="section another-section" id="contact">
       <div class="container contact" id="contact">
         <h1>Contact</h1>
-        <form name="contact" method="POST" data-netlify="true" action="/">
+        <form action="https://formsubmit.co/ba35292462dd99160441bd9808c203b6" method="POST">
           <label for="name"></label>
-          <input type="text" name="name" id="name" placeholder="Full Name" />
+          <input type="text" name="name" id="name" placeholder="Full Name" required />
           <label for="email"></label>
-          <input type="email" name="email" placeholder="Email" />
+          <input type="email" name="email" placeholder="Email"  required/>
           <label for="message"></label>
           <textarea
             name="message"
@@ -206,12 +206,15 @@
             rows="10"
             id="message"
             placeholder="Message"
+
+            required
           ></textarea>
+
           <input class="myinput" type="submit" value="Submit" />
         </form>
       </div>
     </section>
-
-    <script src="js/main.js" defer></script>
+     <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
